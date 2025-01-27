@@ -5,7 +5,7 @@ class Test(MovingCameraScene):
     def construct(self):
         config.frame_rate = 15
 
-        self.add_sound("music1.mp3")
+        self.add_sound("./music2.mp3")
 
         # Creiamo il corpo principale della bottiglia (parte rettangolare)
         bottle_body = Rectangle(
