@@ -1,0 +1,5 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/aserra/University/Didattica_Fisica/animazione/media/videos/uvetta/1080p15/partial_movie_files/Credits/1282513291_4281628355_223132457.mp4'
+file 'file:/Users/aserra/University/Didattica_Fisica/animazione/media/videos/uvetta/1080p15/partial_movie_files/Credits/3236363789_3618834136_887189778.mp4'
+file 'file:/Users/aserra/University/Didattica_Fisica/animazione/media/videos/uvetta/1080p15/partial_movie_files/Credits/3236363789_1861248267_2686684302.mp4'
+file 'file:/Users/aserra/University/Didattica_Fisica/animazione/media/videos/uvetta/1080p15/partial_movie_files/Credits/3236363789_978994035_2440630089.mp4'

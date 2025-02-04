@@ -1,11 +1,17 @@
 from manim import *
 
 
-class Test(MovingCameraScene):
+class MainScene(MovingCameraScene):
     def construct(self):
         config.frame_rate = 15
 
-        self.add_sound("./music2.mp3")
+        # self.add_sound("music3.mp3")
+
+        luvalamp = ImageMobject("luvalamp.jpeg")
+
+        self.add(luvalamp)
+        self.wait(2)
+        self.play(FadeOut(luvalamp), run_time=1.5)
 
         # Creiamo il corpo principale della bottiglia (parte rettangolare)
         bottle_body = Rectangle(
@@ -471,6 +477,39 @@ class Test(MovingCameraScene):
 
         text8 = (
             Text(
+                "Eureka!\nMa un principio, per essere tale, deve valere ovunque!\nDalla simulazione alla realtà...\nmettiamolo alla prova!",
+                font_size=30,
+                color=WHITE,
+            )
+            .next_to(archimedes_face, RIGHT, buff=0.2)
+            .shift(UP * 0.5)
+        )
+
+        bubble_shape8 = (
+            RoundedRectangle(
+                corner_radius=0.3,
+                width=text7.width + 1,  # Aggiunge spazio attorno al testo
+                height=text7.height + 0.5,  # Aggiunge spazio attorno al testo
+            )
+            .set_fill(BLUE, opacity=0.6)
+            .set_stroke(BLUE, width=2)
+        ).surround(text8)
+
+        self.play(FadeIn(bubble_shape8), Write(text8), run_time=2)
+        self.wait(2)
+        self.play(FadeOut(text8, bubble_shape8, archimedes_face))
+
+
+class Credits(MovingCameraScene):
+    def construct(self):
+        archimedes_face = ImageMobject(
+            "archimede.png"
+        )  # Assicurati che il file sia nella stessa directory
+        archimedes_face.scale(0.25)  # Ridimensiona l'immagine se necessario
+        archimedes_face.to_corner(UP + LEFT)  # Posiziona nell'angolo in alto a sinistra
+
+        text8 = (
+            Text(
                 "GRAZIE PER L'ATTENZIONE!",
                 font_size=30,
                 color=WHITE,
@@ -482,13 +521,14 @@ class Test(MovingCameraScene):
         bubble_shape8 = (
             RoundedRectangle(
                 corner_radius=0.3,
-                width=text7.width + 0.5,  # Aggiunge spazio attorno al testo
-                height=text7.height + 0.3,  # Aggiunge spazio attorno al testo
+                width=text8.width + 0.5,  # Aggiunge spazio attorno al testo
+                height=text8.height + 0.3,  # Aggiunge spazio attorno al testo
             )
             .set_fill(BLUE, opacity=0.6)
             .set_stroke(BLUE, width=2)
         ).surround(text8)
 
+        self.play(FadeIn(archimedes_face), run_time=1)
         self.play(FadeIn(bubble_shape8), Write(text8), run_time=2)
 
         experimentalist = Text(

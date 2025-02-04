@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/aserra/University/Didattica_Fisica/exercises/media/videos/function_critical_points/720p30/partial_movie_files/Func/2016333726_3488099029_282214262.mp4'
+file 'file:/Users/aserra/University/Didattica_Fisica/exercises/media/videos/function_critical_points/720p30/partial_movie_files/Func/543634251_1758885774_759867045.mp4'
+file 'file:/Users/aserra/University/Didattica_Fisica/exercises/media/videos/function_critical_points/720p30/partial_movie_files/Func/543634251_1733944848_320432465.mp4'

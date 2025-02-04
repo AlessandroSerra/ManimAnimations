@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/aserra/University/Didattica_Fisica/animazione/media/videos/prova/480p15/partial_movie_files/Prova/3616351749_166477915_223132457.mp4'
+file 'file:/Users/aserra/University/Didattica_Fisica/animazione/media/videos/prova/480p15/partial_movie_files/Prova/190216714_789064381_19304752.mp4'
+file 'file:/Users/aserra/University/Didattica_Fisica/animazione/media/videos/prova/480p15/partial_movie_files/Prova/190216714_440788558_302232672.mp4'
